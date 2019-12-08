@@ -1,9 +1,9 @@
 # MSRR-System
 High-Level System and Mediator for Modular Self-Reconfiguration Robot (MSRR)
 
-by Cheng Jun-Yan
+*by Cheng Jun-Yan*
 
-Prerequisite: opencv2, apriltags3, ros, parrot-olympe, parrot-sphinx(for simulation)
+**Prerequisite:** opencv2, apriltags3, ros, parrot-olympe, parrot-sphinx(for simulation)
 
 ## I. How to use:
 
