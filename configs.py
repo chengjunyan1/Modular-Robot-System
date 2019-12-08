@@ -15,6 +15,7 @@ pf_map_size=15 # size of the map in pf
 pf_map_resolution=15 # resolution of the map in pf
 signal_dt=0.001
 planner_buffer_time=3
+ros_on=1
 
 """ MSRR Configs """
 
