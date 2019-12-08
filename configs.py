@@ -1,7 +1,7 @@
 """ General Configs """
 
-root_path='/home/chengjunyan1/Documents/MSRR/'
-# root_path='C:\ChengJunyan1\MSRR'
+root_path='/home/chengjunyan1/Documents/MSRR-System/'
+# root_path='C:\ChengJunyan1\MSRR-Sysyem'
 # root_path=os.path.abspath(os.curdir)
 
 connect_sim_drone=1
