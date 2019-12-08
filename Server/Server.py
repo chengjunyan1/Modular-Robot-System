@@ -1,5 +1,6 @@
 from Tools import *
 from ROS import *
+from configs import *
 import socket
 
 class Server:
@@ -27,7 +28,10 @@ class Server:
             if Mid=="M":
                 print(message)
             else:
-                publish('Module'+str(Mid),str(message)) # publish to ROS
+                if ros_on:
+                    publish('Module'+str(Mid),str(message)) # publish to ROS
+                else:
+                    print('To Module',Mid,':',message)
                 if message[6]==0 and message[7]==0:
                     print('Module',Mid,'Reached Target Point.')
             conn.close()
