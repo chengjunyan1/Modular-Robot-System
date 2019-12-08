@@ -30,6 +30,9 @@ class MSRR:
         self.RC=Coordinator()
         self.AS=Actuator()
         self.SetRoot()
+    
+    def feed(self,C):
+        C(self.MP.M,0)
 
     def reconfig(self,vC,Coord=1,Target=0,msc=1,rdcb=1,fast=1,rdmp=0):
         print('\Start a New Reconfiguration')
