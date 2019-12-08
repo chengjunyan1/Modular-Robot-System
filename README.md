@@ -45,4 +45,4 @@ sphinx /opt/parrot-sphinx/usr/share/sphinx/drones/anafi4k.drone::stolen_interfac
 
 ## Sample
 
-![image](https://github.com/chengjunyan1/MSRR-System/raw/add-license-1/sample.png)
+![image](https://github.com/chengjunyan1/MSRR-System/raw/master/sample.png)
