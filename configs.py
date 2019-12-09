@@ -1,7 +1,7 @@
 """ General Configs """
 
 root_path='/home/chengjunyan1/Documents/MSRR-System/'
-# root_path='C:\ChengJunyan1\MSRR-Sysyem'
+# root_path='C:\ChengJunyan1\MSRR-System'
 # root_path=os.path.abspath(os.curdir)
 
 connect_sim_drone=1
@@ -15,7 +15,6 @@ pf_map_size=15 # size of the map in pf
 pf_map_resolution=15 # resolution of the map in pf
 signal_dt=0.001
 planner_buffer_time=3
-ros_on=1
 
 """ MSRR Configs """
 
@@ -138,6 +137,14 @@ def C7(M,mode):
     Add(Gid,5,6,3,0)
 
 # DEMOS
+
+def C13(M,mode):
+    C1(M,mode)
+    C3(M,mode)
+
+def C24(M,mode):
+    C2(M,mode)
+    C4(M,mode)
 
 def D1(M): # Multi Graph
     C3(M,0)

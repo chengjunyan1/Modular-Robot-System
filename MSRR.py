@@ -24,15 +24,15 @@ class MSRR:
             self.write_log(0)
         if (connect_sim_drone or connect_real_drone) and not drone_stand_alone:
             self.SetPose()
-
+    
+    def feed(self,C):
+        C(self.MP.M,0)
+        
     def reset(self):
         self.MP=Planner()
         self.RC=Coordinator()
         self.AS=Actuator()
         self.SetRoot()
-    
-    def feed(self,C):
-        C(self.MP.M,0)
 
     def reconfig(self,vC,Coord=1,Target=0,msc=1,rdcb=1,fast=1,rdmp=0):
         print('\Start a New Reconfiguration')
@@ -55,7 +55,7 @@ class MSRR:
                 while self.semaphore!=0:
                     pass
                 self.write_log(i+1)
-            self.write_log(0)
+        self.write_log(0)
     
     #------------ COORDINATOR ------------#
 
@@ -134,8 +134,10 @@ class MSRR:
         if not (Coord and Target):
             self.MP.initTopo(rdcb)
         if Coord:
-            unitCoord=self.RC.unitCoord()
-            self.MP.coordTopo(unitCoord,rdcb)
+            success=False
+            while not success:
+                unitCoord=self.RC.unitCoord()
+                success=self.MP.coordTopo(unitCoord,rdcb)
         if Target:
             self.MP.M.TTopo=Target # set a target topo instead of using default topo, [[[dx,dy],rot],...], e.g [[[0, 0], 0], [[3, 0], 0]]
 
@@ -184,7 +186,15 @@ class MSRR:
                             round(rp[Mid][i][0],3),round(rp[Mid][i][1],3),round(vt[Mid],3),
                             round(dxd,3),round(dyd,3),0,round(dtr,3)]
             print('Sending Signal to Module',Mid,'...','Process:',i+1,'/',len(rp[Mid]))
-            self.SI.sendSignal(Mid,signal)
+            success=False
+            wait=0
+            while not success:
+                success=self.SI.sendSignal(Mid,signal)
+                if not success:
+                    time.sleep(1)
+                    wait=1
+                if success and wait:
+                    print('Send Signal to Module',Mid,'success  ...','Process:',i+1,'/',len(rp[Mid]))
             self.SILock=0 
             time.sleep(dt)
         self.semaphore+=1
