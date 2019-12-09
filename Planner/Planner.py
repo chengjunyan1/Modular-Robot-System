@@ -171,6 +171,8 @@ class Planner:
         self.M.PTopo=[]
         for i in self.M.GP:
             root=i.R
+            if root not in Coord.center:
+                return False
             center=Coord.center[root]
             theta=Coord.theta[root]
             self.M.PTopo.append([list(center),float(theta)])
@@ -178,6 +180,7 @@ class Planner:
             self.M.addE(e,0)
         for e in self.M.TBreak:
             self.M.addE(e,1)
+        return True
 
     def Print(self,msc=1,rdcb=1,fast=1,rdmp=0):
         Mprint(self,msc=msc,rdcb=rdcb,fast=fast,rdmp=rdmp)
