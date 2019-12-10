@@ -15,11 +15,11 @@ High-Level System and Mediator for Modular Self-Reconfiguration Robot (MSRR)
 
 ## II. How to Install Apriltags:
 
-1. download apriltags from https://github.com/AprilRobotics/apriltag (Or directly use apriltags.zip in /Coordinator)
+1.Download apriltags from https://github.com/AprilRobotics/apriltag (Or directly use apriltags.zip in /Coordinator)
 
-2. rename the folder 'apriltags', put it in Coordinator/
+2.Rename the folder 'apriltags', put it in Coordinator/
 
-3. enter the folder, then build it:
+3.Enter the folder, then build it:
 
 cmake .
 
@@ -37,11 +37,11 @@ sphinx /opt/parrot-sphinx/usr/share/sphinx/drones/anafi4k.drone::stolen_interfac
 
 ## V. How to modify
 
-1. Write the MSRRScript.py to plan a high level task
+1.Write the MSRRScript.py to plan a high level task
 
-2. Write the DroneScript.py to define the behavior of Drone. Or use Coordinator/drone.py to directly control it.
+2.Write the DroneScript.py to define the behavior of Drone. Or use Coordinator/drone.py to directly control it.
 
-3. Modify configs.py and also parameters for planner, coordinator and actuator.
+3.Modify configs.py and also parameters for planner, coordinator and actuator.
 
 ## Sample
 
