@@ -15,11 +15,11 @@ High-Level System and Mediator for Modular Self-Reconfiguration Robot (MSRR)
 
 ## II. How to Install Apriltags:
 
-1.download apriltags from https://github.com/AprilRobotics/apriltag (Or directly use apriltags.zip in /Coordinator)
+1. download apriltags from https://github.com/AprilRobotics/apriltag (Or directly use apriltags.zip in /Coordinator)
 
-2.rename the folder 'apriltags', put it in Coordinator/
+2. rename the folder 'apriltags', put it in Coordinator/
 
-3.enter the folder, then build it:
+3. enter the folder, then build it:
 
 cmake .
 
