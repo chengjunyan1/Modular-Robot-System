@@ -1,5 +1,5 @@
 # MSRR-System
-High-Level System and Mediator for Modular Self-Reconfiguration Robot (MSRR)
+High-Level System and Mediator for Modular Self-Reconfigurable Robot (MSRR)
 
 *by Cheng Jun-Yan*
 
