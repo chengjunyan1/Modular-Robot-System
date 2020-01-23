@@ -5,7 +5,11 @@ High-Level System and Mediator for Modular Self-Reconfiguration Robot (MSRR)
 
 **Prerequisite:** opencv2, apriltags3, ros, parrot-olympe, parrot-sphinx(for simulation)
 
-This repository contains a MSRR High-Lvel System I developed for the term project in WPI RBE502 ROBOT CONTROL (This repository only showed my work in the project, its not the whole project). Final Repors folder contains my part in written final report and final presentation ppt. 
+This repository contains a MSRR High-Lvel System I developed for the term project in WPI RBE502 ROBOT CONTROL (*Please note that this is not the whole project, it only shows my part in the project*). 
+
+Final Repors folder contains my part in written final report and final presentation ppt. 
+
+# The Self-Reconfiguration Planning algorithm contained in this system is designed by myself based on many previous literatures (see Final Report - my part).
 
 ## I. How to use:
 
