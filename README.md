@@ -5,6 +5,8 @@ High-Level System and Mediator for Modular Self-Reconfiguration Robot (MSRR)
 
 **Prerequisite:** opencv2, apriltags3, ros, parrot-olympe, parrot-sphinx(for simulation)
 
+This repository contains a MSRR High-Lvel System I developed for the term project in WPI RBE502 ROBOT CONTROL (This repository only showed my work in the project, its not the whole project). Final Repors folder contains my part in written final report and final presentation ppt. 
+
 ## I. How to use:
 
 1.Run BootServer.py (args: 1 for listen ros. none for server., also need run the roscore)
