@@ -9,7 +9,7 @@ This repository contains a MSRR High-Lvel System I developed for the term projec
 
 Final Repors folder contains my part in written final report and final presentation ppt. 
 
-# The Self-Reconfiguration Planning algorithm contained in this system is designed by myself based on many previous literatures (see Final Report - my part).
+### The Self-Reconfiguration Planning algorithm contained in this system is designed by myself based on many previous literatures (see Final Report - my part).
 
 ## I. How to use:
 
