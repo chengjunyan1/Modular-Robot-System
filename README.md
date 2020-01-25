@@ -3,7 +3,7 @@ High-Level System and Mediator for Modular Self-Reconfigurable Robot (MSRR)
 
 *by Cheng Jun-Yan*
 
-**Prerequisite:** opencv2, apriltags3, ros, parrot-olympe, parrot-sphinx(for simulation)
+**Prerequisite:** opencv2, apriltags3, ros, parrot-olympe (for drone control), parrot-sphinx (for drone simulation)
 
 ![image](https://github.com/chengjunyan1/MSRR-System/raw/master/system.png)
 
