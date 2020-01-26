@@ -19,7 +19,7 @@ This system could be runs on both real robot and simulation by modifying the sig
 
 ![image](https://github.com/chengjunyan1/MSRR-System/raw/master/md.png)
 
-***The CAD model is from Erik Wang, the rightmost robot model is from Raunak Hosangadi.***
+***This image comes from my teammates, CAD model from Erik Wang, the rightmost robot model from Raunak Hosangadi.***
 
 ## I. How to use:
 
