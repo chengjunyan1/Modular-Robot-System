@@ -15,6 +15,14 @@ This system could be runs on both real robot and simulation by modifying the sig
 
 #### The Self-Reconfiguration Planning algorithm contained in this system is designed by myself based on many previous literatures (see Final Report - my part). 
 
+## Hardware Platform
+
+![image](https://github.com/chengjunyan1/MSRR-System/raw/master/md.png)
+
+The above image showed the mechanical design and DOF of one module. 
+
+***This image comes from my teammates, CAD model from Erik Wang, the rightmost robot model from Raunak Hosangadi.***
+
 ## I. How to use:
 
 1.Run BootServer.py (args: 1 for listen ros. none for server., also need run the roscore)
